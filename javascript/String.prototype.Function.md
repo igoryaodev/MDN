@@ -1,6 +1,6 @@
 ### String Function Outline
-|function|description|
-|:---|:---|:---|
+|function|description| -- | -- | -- |
+|:---|:---|:---|:---|:---|
 |String.fromCharCode()|`(方法返回由指定的UTF-16代码单元序列创建的字符串。)该方法返回一个字符串，而不是一个  String 对象。由于 fromCharCode() 是  String 的静态方法，所以应该像这样使用：String.fromCharCode()，而不是作为你创建的  String 对象的方法。`|`console.log(String.fromCharCode(189, 43, 190, 61));`\/\/ expected output: "½+¾="|
 |String.fromCodePoint()|`(静态方法返回使用指定的代码点序列创建的字符串。)该方法返回一个字符串，而不是一个 String 对象。因为 fromCodePoint() 是 String 的一个静态方法，所以只能通过 String.fromCodePoint() 这样的方式来使用，不能在你创建的 String 对象实例上直接调用。`|`console.log(String.fromCodePoint(9731, 9733, 9842, 0x2F804));`\/\/ expected output: "☃★♲你"|
 |String.prototype.charAt()|`字符串中的字符从左向右索引，第一个字符的索引值为 0，最后一个字符（假设该字符位于字符串 stringName 中）的索引值为 stringName.length - 1。 如果指定的 index 值超出了该范围，则返回一个空字符串。`不支持[多文种平面（BMP）字符](https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%B9%B3%E9%9D%A2%E6%98%A0%E5%B0%84#.E5.9F.BA.E6.9C.AC.E5.A4.9A.E6.96.87.E7.A7.8D.E5.B9.B3.E9.9D.A2)|`var str = 'test';str.charAt(1);// output: e`|
